@@ -1,0 +1,10 @@
+{% if user_list %}
+    <ul>
+    {% for u in user_list %}
+        <!--li><a href="/users/{{ u.id }}/">{{ u.name }}</a></li-->
+        <li><a href="{% url 'detail' u.id %}">{{ u.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
