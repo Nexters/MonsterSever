@@ -26,9 +26,16 @@
 - u.payment_set.create(price=10) : user 에 has_many 인 payment 만들기
 
 ### INSTALLED_APPS
+
 #### django_extensions
 - python manage.py graph_models -a -o myapp_models.png
 - python manage.py show_urls
 - python manage.py validate_templates
 - python manage.py shell_plus
 - python manage.py runserver_plus
+
+#### Django Tastypie
+- http://django-tastypie.readthedocs.org/en/latest/tutorial.html
+
+### pip install
+- pip install django-tastypie
